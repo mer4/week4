@@ -43,6 +43,10 @@ $example = "Hello world";
 $nwords = str_word_count($example, 0);
 echo $nwords . '<br>';
 
+echo strlen($newDate) . '<br>';
+
+echo ord($newDate) . '<br>';
+
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
 print_r($year)
