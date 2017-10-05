@@ -47,6 +47,14 @@ echo strlen($newDate) . '<br>';
 
 echo ord($newDate) . '<br>';
 
+$array = str_split($newDate);
+$element = count($array);
+for($a = 0; $a < 2; $a++) {
+	$element -= 1;
+	echo $array[$element];
+}
+echo '<br>';
+
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
 print_r($year)
