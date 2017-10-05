@@ -28,6 +28,15 @@ if($otherComp > 0) {
 	echo "Oops<br>";
 }
 
+$count = substr_count($newDate, "/");
+echo $count . '<br>';
+for($a = 0; $a < $count; $a++) {
+	$ans += 1;
+	$ans = stripos($newDate,"/",$ans);
+	echo $ans . ' ';
+}
+echo '<br>';
+
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
 print_r($year)
