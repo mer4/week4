@@ -37,6 +37,12 @@ for($a = 0; $a < $count; $a++) {
 }
 echo '<br>';
 
+$words = str_word_count($newDate, 0);
+echo $words . '<br>';
+$example = "Hello world";
+$nwords = str_word_count($example, 0);
+echo $nwords . '<br>';
+
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
 print_r($year)
