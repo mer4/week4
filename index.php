@@ -55,6 +55,13 @@ for($a = 0; $a < 2; $a++) {
 }
 echo '<br>';
 
+$narray = explode('/', $newDate);
+$nelement = count($narray);
+for($a = 0; $a < $nelement; $a++) {
+	echo $narray[$a] . ' ';
+}
+echo '<br>';
+
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
 print_r($year)
